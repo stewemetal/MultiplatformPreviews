@@ -1,11 +1,11 @@
 package com.stewemetal.cmppreviews.gallery
 
-import SomeWidget
 import androidx.compose.foundation.layout.Column
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.WindowState
 import androidx.compose.ui.window.singleWindowApplication
 import com.stewemetal.cmppreviews.uicomponents.DemoProgressIndicator
+import com.stewemetal.cmppreviews.uicomponents.SomeWidget
 import org.jetbrains.compose.reload.DevelopmentEntryPoint
 
 fun main() = singleWindowApplication(
