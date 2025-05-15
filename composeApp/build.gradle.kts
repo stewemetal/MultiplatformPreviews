@@ -21,7 +21,7 @@ kotlin {
             jvmTarget.set(JvmTarget.JVM_21)
         }
     }
-    
+
     listOf(
         iosX64(),
         iosArm64(),
@@ -32,12 +32,12 @@ kotlin {
             isStatic = true
         }
     }
-    
+
     jvm("desktop")
-    
+
     sourceSets {
         val desktopMain by getting
-        
+
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
@@ -55,9 +55,14 @@ kotlin {
 
             implementation(project(":ui-components"))
         }
+
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
             implementation(libs.kotlinx.coroutines.swing)
+        }
+
+        commonTest.dependencies {
+            implementation(libs.compose.preview.scanner)
         }
     }
 }

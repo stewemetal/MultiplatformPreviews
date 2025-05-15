@@ -5,7 +5,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
-@Preview
+@PreviewPrimaryBackground
 @Composable
 private fun PreviewCommonButton() {
     Button(
@@ -15,3 +15,19 @@ private fun PreviewCommonButton() {
         }
     )
 }
+
+@PreviewPrimaryBackground
+@Composable
+private fun PreviewCommonButton() {
+    Button(
+        onClick = {},
+        content = {
+            Text("Click me")
+        }
+    )
+}
+
+
+@Preview
+@Preview
+internal annotation class PreviewPrimaryBackground
