@@ -62,7 +62,7 @@ kotlin {
         }
 
         commonTest.dependencies {
-            implementation(libs.compose.preview.scanner)
+//            implementation(libs.compose.preview.scanner)
         }
     }
 }

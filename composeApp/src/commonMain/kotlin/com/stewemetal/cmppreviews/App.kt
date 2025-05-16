@@ -18,8 +18,10 @@ import androidx.compose.ui.Modifier
 import com.stewemetal.cmppreviews.uicomponents.DemoProgressIndicator
 import com.stewemetal.cmppreviews.uicomponents.SomeWidget
 import multiplatformpreviews.composeapp.generated.resources.Res
+import multiplatformpreviews.composeapp.generated.resources.button_text
 import multiplatformpreviews.composeapp.generated.resources.compose_multiplatform
 import org.jetbrains.compose.resources.painterResource
+import org.jetbrains.compose.resources.stringResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Preview
@@ -46,6 +48,8 @@ fun App(windowSizeClass: WindowSizeClass) {
                     Text("Compose: $greeting")
                 }
             }
+
+            Text(stringResource(Res.string.button_text))
         }
     }
 }

@@ -37,3 +37,8 @@ kotlin {
         }
     }
 }
+
+// Hot reload support
+composeCompiler {
+    featureFlags.add(ComposeFeatureFlag.OptimizeNonSkippingGroups)
+}

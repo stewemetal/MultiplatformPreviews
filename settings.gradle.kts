@@ -35,4 +35,4 @@ dependencyResolutionManagement {
 
 include(":composeApp")
 include(":ui-components")
-include(":gallery")
+include(":ui-components-gallery")

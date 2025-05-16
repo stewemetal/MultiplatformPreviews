@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="app_name">ComposeApp</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="welcome_message">Welcome to Compose App</string>
+    <string name="greeting_message">Hello, %1$s!</string>
+    <string name="button_text">Click Me</string>
+    <string name="error_message">An error occurred. Please try again.</string>
+</resources>
